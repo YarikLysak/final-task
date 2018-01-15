@@ -1,0 +1,40 @@
+.main-slider {
+    position: relative;
+}
+
+.main-slider-image {
+    height: 350px;
+}
+
+.main-slider-arrow {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    border: none;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.2s, background 0.2s;
+    outline: none;
+}
+
+.main-slider-arrow:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.main-slider-next {
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.45));
+    right: 0;
+}
+
+.main-slider-prev {
+    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.45));
+}
+
+@media screen and (max-width: 767px) {
+    .main-slider {
+        display: none;
+    }
+}

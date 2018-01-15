@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Task</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="main-slider">
+            <button type="button" class="main-slider-arrow main-slider-prev js-main-slider-prev">&#10216;</button>
+            <button type="button" class="main-slider-arrow main-slider-next js-main-slider-next">&#10217;</button>
+            <div class="main-slider-content js-main-slider">
+                <div class="main-slider-image" style="background-image: url('images/slider-img2.jpg')"></div>
+                <div class="main-slider-image" style="background-image: url('images/slider-img1.jpg')"></div>
+                <div class="main-slider-image" style="background-image: url('images/slider-img3.jpg')"></div>
+                <div class="main-slider-image" style="background-image: url('images/slider-img4.jpg')"></div>
+                <div class="main-slider-image" style="background-image: url('images/slider-img5.jpg')"></div>
+            </div>
+        </div>
+        <div class="menu-collapsed-btn">
+            <button type="button" id="menu-collapsed-btn">&#8801;</button>
+        </div>
+
+        <div class="collapsed-menu-container">
+            <ul class="menu-collapsed" id="menu-collapsed">
+                <li class="menu-collapsed-tab">
+                    <a href="/#/">Home</a>
+                </li>
+                <li class="menu-collapsed-tab">
+                    <a href="/#/tasks">Tasks</a>
+                    <ul class="menu-collapsed-sub-menu">
+                        <li class="menu-collapsed-sub-menu-tab">
+                            <a href="/#/tasks">List of tasks</a>
+                        </li>
+                        <li class="menu-collapsed-sub-menu-tab">
+                            <a href="/#/employees">Employees</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-collapsed-tab">
+                    <a href="/#/gallery">Gallery</a>
+                </li>
+                <li class="menu-collapsed-tab">
+                    <a href="/#/contacts">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="main-menu">
+            <li class="main-menu-tab">
+                <a href="/#/">Home</a>
+            </li>
+            <li class="main-menu-tab">
+                <a href="/#/tasks">Tasks</a>
+                <ul class="main-menu-sub-menu">
+                    <li class="main-menu-sub-menu-tab">
+                        <a href="/#/tasks">List of tasks</a>
+                    </li>
+                    <li class="main-menu-sub-menu-tab">
+                        <a href="/#/employees">Employees</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="main-menu-tab">
+                <a href="/#/gallery">Gallery</a>
+            </li>
+            <li class="main-menu-tab">
+                <a href="/#/contacts">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content" id="content"></div>
+
+    <footer class="footer">
+        <div class="footer-content">Yarik 2018</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

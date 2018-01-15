@@ -1,0 +1,163 @@
+/*collapsed menu*/
+
+.main-menu {
+    display: none;
+}
+
+.collapsed-menu-container {
+    position: relative;
+}
+
+.menu-collapsed-btn {
+    background: darkslategray;
+    color: white;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-collapsed-btn button {
+    background: white;
+    color: darkslategray;
+    border: none;
+    height: 45px;
+    width: 45px;
+    font-size: 35px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.menu-collapsed-btn button:active {
+    outline: 15px;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    margin-left: 12px;
+    margin-right: 3px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+.menu-collapsed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background: darkslategray;
+    color: white;
+    align-items: center;
+    width: 150px;
+    padding: 0px 10px;
+    z-index: 100;
+}
+
+.menu-collapsed-tab {
+    transition: border-color 0.2s;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu-collapsed-sub-menu {
+    width: 130px;
+}
+
+.menu-collapsed-sub-menu-tab {
+    position: relative;
+    background: darkslategray;
+    padding: 10px;
+    left: 0;
+    transition: left 0.2s;
+}
+
+.menu-collapsed li {
+    list-style: none;
+}
+
+.menu-collapsed a {
+    color: white;
+    display: block;
+    width: calc(100% - 4px);
+}
+
+@media screen and (min-width: 768px) {
+    .menu-collapsed-btn,
+    .menu-collapsed {
+        display: none;
+    }
+
+    .main-menu {
+        display: flex;
+        background: darkslategray;
+        color: white;
+        align-items: center;
+        height: 60px;
+        padding-top: 4px;
+    }
+
+    .main-menu-tab {
+        padding: 0 15px;
+        transition: border-color 0.2s;
+        cursor: pointer;
+        position: relative;
+        line-height: 55px;
+        border-bottom: 4px solid transparent;
+    }
+
+    .main-menu-tab:after {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        background: white;
+        height: 30%;
+        position: absolute;
+        top: 35%;
+        right: 0px;
+    }
+
+    .main-menu-tab:last-child:after {
+        display: none;
+    }
+
+    .main-menu-tab:hover {
+        border-color: white;
+    }
+
+    .main-menu-sub-menu {
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        width: 140px;
+        display: none;
+        z-index: 100;
+    }
+
+    .main-menu-sub-menu-tab {
+        position: relative;
+        background: darkslategray;
+        padding: 0 20px;
+        width: 100%;
+        left: 0;
+        transition: left 0.2s;
+    }
+
+    .main-menu-tab:hover .main-menu-sub-menu {
+        display: block;
+    }
+
+    .main-menu-sub-menu-tab:hover {
+        left: 6px;
+    }
+
+    .main-menu li {
+        list-style: none;
+    }
+
+    .main-menu a {
+        color: white;
+        display: block;
+        height: calc(100% - 4px);
+    }
+}
